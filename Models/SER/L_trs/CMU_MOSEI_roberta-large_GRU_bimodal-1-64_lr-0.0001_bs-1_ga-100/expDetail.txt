@@ -1,0 +1,2 @@
+../Results/exp9/L/CMU_MOSEI_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100
+0.728
