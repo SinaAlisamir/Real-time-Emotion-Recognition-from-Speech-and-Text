@@ -146,16 +146,18 @@ class Visualise():
 
     def update_gif(self):    
         if self.gif_show:
-            if self.backend.labels["pred"] == "happy": 
+            if self.backend.labels["pred"] in ["happy", "happiness"]: 
                 self.gif_frames = self.gif_frames_happy
-            if self.backend.labels["pred"] == "content": 
+            elif self.backend.labels["pred"] in ["content", "positive"]: 
                 self.gif_frames = self.gif_frames_content
-            if self.backend.labels["pred"] == "neutral": 
+            elif self.backend.labels["pred"] in ["neutral"]: 
                 self.gif_frames = self.gif_frames_neutral
-            if self.backend.labels["pred"] == "sad": 
+            elif self.backend.labels["pred"] in ["sad", "sadness", "negative"]: 
                 self.gif_frames = self.gif_frames_sad
-            if self.backend.labels["pred"] == "angry": 
+            elif self.backend.labels["pred"] in ["angry", "anger"]: 
                 self.gif_frames = self.gif_frames_angry
+            else:
+                return
             self.total_counter += 1
             self.gif_counter += 1
             if self.gif_counter >= self.frameCnt: self.gif_counter = 0
@@ -366,7 +368,12 @@ class Visualise():
 
     async def bulb_func_hue(self):#async 
         if self.hue_lights == []:
-            bridge_ip = "192.168.14.1"
+            # bridge_ip = "192.168.14.1"
+            page = requests.get("http://discovery.meethue.com/")
+            page_content_str = page.content
+            page_content_str = page_content_str.decode("utf-8").replace("\n", "")
+            res = json.loads(page_content_str)
+            bridge_ip = res[0]["internalipaddress"]
             print("bridge_ip", bridge_ip)
             b = Bridge(bridge_ip)
             print("bridge username:", b.username)

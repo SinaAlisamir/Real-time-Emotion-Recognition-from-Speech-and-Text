@@ -27,58 +27,58 @@ class Settings():
         # SER_feat_norm=False
         # SER_dataset = "IEMOCAP"
         SER_models = {
-            "A_2C_C": {
-                "title": "Speech -> Multi (En) -> CMU_MOSEI",
-                "feat_type": "wav2vec2-xlsr",
-                "feat_norm": False,
-                "feat_type_text": "",
-                "feat_norm_text": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_CMU_MOSEI+IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "CMU_MOSEI",
-                },
-            },
-            "A_2C_I": {
-                "title": "Speech -> Multi (En) -> IEMOCAP",
-                "feat_type": "wav2vec2-xlsr",
-                "feat_norm": False,
-                "feat_type_text": "",
-                "feat_norm_text": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_CMU_MOSEI+IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 1,
-                    "dataset": "IEMOCAP",
-                },
-            },
-            "A_MOSEI": {
-                "title": "Speech -> CMU_MOSEI (En)",
-                "feat_type": "wav2vec2-xlsr",
-                "feat_norm": False,
-                "feat_type_text": "",
-                "feat_norm_text": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "A", "CMU_MOSEI_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "CMU_MOSEI",
-                },
-            },
-            "A_IEMOCAP": {
-                "title": "Speech -> IEMOCAP (En)",
-                "feat_type": "wav2vec2-xlsr",
-                "feat_norm": False,
-                "feat_type_text": "",
-                "feat_norm_text": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "A", "IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "IEMOCAP",
-                },
-            },
+            # "A_2C_C": {
+            #     "title": "Speech -> Multi (En) -> CMU_MOSEI",
+            #     "feat_type": "wav2vec2-xlsr",
+            #     "feat_norm": False,
+            #     "feat_type_text": "",
+            #     "feat_norm_text": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_CMU_MOSEI+IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "CMU_MOSEI",
+            #     },
+            # },
+            # "A_2C_I": {
+            #     "title": "Speech -> Multi (En) -> IEMOCAP",
+            #     "feat_type": "wav2vec2-xlsr",
+            #     "feat_norm": False,
+            #     "feat_type_text": "",
+            #     "feat_norm_text": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_CMU_MOSEI+IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 1,
+            #         "dataset": "IEMOCAP",
+            #     },
+            # },
+            # "A_MOSEI": {
+            #     "title": "Speech -> CMU_MOSEI (En)",
+            #     "feat_type": "wav2vec2-xlsr",
+            #     "feat_norm": False,
+            #     "feat_type_text": "",
+            #     "feat_norm_text": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "A", "CMU_MOSEI_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "CMU_MOSEI",
+            #     },
+            # },
+            # "A_IEMOCAP": {
+            #     "title": "Speech -> IEMOCAP (En)",
+            #     "feat_type": "wav2vec2-xlsr",
+            #     "feat_norm": False,
+            #     "feat_type_text": "",
+            #     "feat_norm_text": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "A", "IEMOCAP_wav2vec2-xlsr-voidful_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "IEMOCAP",
+            #     },
+            # },
             "AL_IEMOCAP": {
                 "title": "Speech +> ASR -> IEMOCAP (En)",
                 "feat_type": "wav2vec2-xlsr",
@@ -132,7 +132,7 @@ class Settings():
                 },
             },
             "A_4C_G": {
-                "title": "Speech -> Multi (Fr) -> GEMEP",
+                "title": "Speech -> Multi (French) -> GEMEP",
                 "feat_type": "wav2vec2-xlsr",
                 "feat_norm": False,
                 "feat_type_text": "",
@@ -145,12 +145,12 @@ class Settings():
                 },
             },
             "A_4C_R": {
-                "title": "Speech -> Multi (Fr) -> RAVDESS",
+                "title": "Speech -> Multi (English) -> RAVDESS",
                 "feat_type": "wav2vec2-xlsr",
                 "feat_norm": False,
                 "feat_type_text": "",
                 "feat_norm_text": False,
-                "lang": "fr-FR",
+                "lang": "en-US",
                 "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_GEMEP_RAVDESS_CaFE_EmoDB_wav2vec2-xlsr_GRU-1-64_lr-0.0001", "model.pth"),
                 "classifier": {
                     "index": 1,
@@ -158,12 +158,12 @@ class Settings():
                 },
             },
             "A_4C_C": {
-                "title": "Speech -> Multi (Fr) -> CaFE",
+                "title": "Speech -> Multi (French) -> CaFE",
                 "feat_type": "wav2vec2-xlsr",
                 "feat_norm": False,
                 "feat_type_text": "",
                 "feat_norm_text": False,
-                "lang": "fr-FR",
+                "lang": "fr-CA",
                 "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_GEMEP_RAVDESS_CaFE_EmoDB_wav2vec2-xlsr_GRU-1-64_lr-0.0001", "model.pth"),
                 "classifier": {
                     "index": 2,
@@ -171,12 +171,12 @@ class Settings():
                 },
             },
             "A_4C_E": {
-                "title": "Speech -> Multi (Fr) -> EmoDB",
+                "title": "Speech -> Multi (German) -> EmoDB",
                 "feat_type": "wav2vec2-xlsr",
                 "feat_norm": False,
                 "feat_type_text": "",
                 "feat_norm_text": False,
-                "lang": "fr-FR",
+                "lang": "de-DE",
                 "model_path": os.path.join(file_dir, "Models", "SER", "A", "multi_GEMEP_RAVDESS_CaFE_EmoDB_wav2vec2-xlsr_GRU-1-64_lr-0.0001", "model.pth"),
                 "classifier": {
                     "index": 3,
@@ -201,63 +201,63 @@ class Settings():
             },
         }
         TER_models = {
-            "L_IEMOCAP": {
-                "title": "Human transcription -> IEMOCAP (En)",
-                "feat_type": "roberta-large",
-                "feat_norm": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "L", "IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "IEMOCAP",
-                },
-            },
-            "L_IEMOCAP_trs": {
-                "title": "ASR transcription -> IEMOCAP (En)",
-                "feat_type": "roberta-large",
-                "feat_norm": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "IEMOCAP",
-                },
-            },
-            "L_MOSEI_trs": {
-                "title": "ASR transcription -> CMU_MOSEI (En)",
-                "feat_type": "roberta-large",
-                "feat_norm": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "CMU_MOSEI_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "CMU_MOSEI",
-                },
-            },
-            "L_2C_trs_C": {
-                "title": "ASR transcription -> Multi (En) -> CMU_MOSEI",
-                "feat_type": "roberta-large",
-                "feat_norm": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "multi_CMU_MOSEI+IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 0,
-                    "dataset": "CMU_MOSEI",
-                },
-            },
-            "L_2C_trs_I": {
-                "title": "ASR transcription -> Multi (En) -> IEMOCAP",
-                "feat_type": "roberta-large",
-                "feat_norm": False,
-                "lang": "en-US",
-                "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "multi_CMU_MOSEI+IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
-                "classifier": {
-                    "index": 1,
-                    "dataset": "IEMOCAP",
-                },
-            },
+            # "L_IEMOCAP": {
+            #     "title": "Human transcription -> IEMOCAP (En)",
+            #     "feat_type": "roberta-large",
+            #     "feat_norm": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "L", "IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "IEMOCAP",
+            #     },
+            # },
+            # "L_IEMOCAP_trs": {
+            #     "title": "ASR transcription -> IEMOCAP (En)",
+            #     "feat_type": "roberta-large",
+            #     "feat_norm": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "IEMOCAP",
+            #     },
+            # },
+            # "L_MOSEI_trs": {
+            #     "title": "ASR transcription -> CMU_MOSEI (En)",
+            #     "feat_type": "roberta-large",
+            #     "feat_norm": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "CMU_MOSEI_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "CMU_MOSEI",
+            #     },
+            # },
+            # "L_2C_trs_C": {
+            #     "title": "ASR transcription -> Multi (En) -> CMU_MOSEI",
+            #     "feat_type": "roberta-large",
+            #     "feat_norm": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "multi_CMU_MOSEI+IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 0,
+            #         "dataset": "CMU_MOSEI",
+            #     },
+            # },
+            # "L_2C_trs_I": {
+            #     "title": "ASR transcription -> Multi (En) -> IEMOCAP",
+            #     "feat_type": "roberta-large",
+            #     "feat_norm": False,
+            #     "lang": "en-US",
+            #     "model_path": os.path.join(file_dir, "Models", "SER", "L_trs", "multi_CMU_MOSEI+IEMOCAP_roberta-large_GRU_bimodal-1-64_lr-0.0001_bs-1_ga-100", "model.pth"),
+            #     "classifier": {
+            #         "index": 1,
+            #         "dataset": "IEMOCAP",
+            #     },
+            # },
             "L_allociné": {
-                "title": "Human transcription -> Allociné (Fr)",
+                "title": "Text -> Allociné (Fr)",
                 "feat_type": "tfidf",
                 "feat_norm": False,
                 "lang": "fr-Fr",
@@ -294,18 +294,18 @@ class Settings():
                     "mergeWin_sec": 0.7,
                 }
             },
-            "W2V2_GRU": {
-                "title": "W2V2 -> GRU",
-                "feat_type": "wav2vec2-FR-2.6K-base",
-                "feat_norm": False,
-                "model_path": os.path.join(file_dir, "Models", "VAD", "W2V2_GRU", "model.pth"),
-                "post_process":{
-                    "hys_top":      -0.2,
-                    "hys_bottom":   -0.25,
-                    "cutWin_sec":   0.1,
-                    "mergeWin_sec": 0.7,
-                }
-            },
+            # "W2V2_GRU": {
+            #     "title": "W2V2 -> GRU",
+            #     "feat_type": "wav2vec2-FR-2.6K-base",
+            #     "feat_norm": False,
+            #     "model_path": os.path.join(file_dir, "Models", "VAD", "W2V2_GRU", "model.pth"),
+            #     "post_process":{
+            #         "hys_top":      -0.2,
+            #         "hys_bottom":   -0.25,
+            #         "cutWin_sec":   0.1,
+            #         "mergeWin_sec": 0.7,
+            #     }
+            # },
         }
 
         

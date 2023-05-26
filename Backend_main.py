@@ -172,7 +172,7 @@ class Main():
                 skipFeats = False
         if not skipFeats:
             self.TERFeatsModule = Feats_Module(device=self.device, feat_type=self.TER_model["feat_type"], norm=self.TER_model["feat_norm"])
-        if "tfidf" in self.SER_model["feat_type_text"]:
+        if "tfidf" in self.TER_model["feat_type"]:
             self.TERFeatsModule = Feats_Module(device=self.device, 
                 feat_type=self.TER_model["feat_type"], 
                 norm=self.TER_model["feat_norm"],
